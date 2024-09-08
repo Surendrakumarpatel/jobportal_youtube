@@ -41,7 +41,7 @@ const Singup = () => {
     formData.append("role", input.role);
     if (input.file) {
       formData.append("file", input.file);
-    }
+    } 
     try {
       dispatch(setLoading(true));
       const res = await axios.post("http://localhost:8000/api/v1/user/register", formData, {

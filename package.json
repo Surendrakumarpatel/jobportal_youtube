@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "start": "nodemon index.js",
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": { 
+    "dev": "nodemon backend/index.js",
+    "build":"npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "start":"nodemon backend/index.js"
   },
   "author": "",
   "license": "ISC",
