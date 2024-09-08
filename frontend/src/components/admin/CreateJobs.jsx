@@ -38,7 +38,7 @@ const CreateJobs = () => {
         e.preventDefault();
         try {
             dispatch(setLoading(true));
-            const res = await axios.post(`http://localhost:8000/api/v1/job/postjob`, input, {
+            const res = await axios.post(`https://jobportal-youtube.onrender.com/api/v1/job/postjob`, input, {
                 headers: {
                     'Content-Type': 'application/json'
                 },
